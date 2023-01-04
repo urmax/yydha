@@ -5,6 +5,7 @@ import recoTheme from 'vuepress-theme-reco'
 export default defineUserConfig({
   title: 'blog for tanyaohua',
   description: 'Just playing',
+  base: '/yydha/', /* 基础虚拟路径: */
   theme: recoTheme({
     style: '@vuepress-reco/style-default',
     logo: '/logo.png',

@@ -18,7 +18,7 @@ bannerBrand:
 blog: 
   themeConfig:
     author: tanyaohua
-    authorAvatar: '/touxiang.jpg'
+    authorAvatar: '/touxiang.png'
 #   buttons:
 #     - { text: Guide, link: '/docs/guide/introduce' }
 #     - { text: Default Style, link: '/docs/style-default-api/introduce', type: 'plain' }
