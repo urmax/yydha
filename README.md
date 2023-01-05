@@ -16,9 +16,8 @@ bannerBrand:
   heroText: tanyaohua-blog
   tagline: tanyaohua的个人博客
 blog: 
-  themeConfig:
-    author: tanyaohua
-    authorAvatar: '/touxiang.png'
+#   socialLinks:
+#     - { icon: 'BrandGithub', link: 'https://github.com/urmax' }
 #   buttons:
 #     - { text: Guide, link: '/docs/guide/introduce' }
 #     - { text: Default Style, link: '/docs/style-default-api/introduce', type: 'plain' }

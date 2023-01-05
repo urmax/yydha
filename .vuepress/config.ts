@@ -4,12 +4,13 @@ import recoTheme from 'vuepress-theme-reco'
 
 export default defineUserConfig({
   title: 'blog for tanyaohua',
-  description: 'Just playing',
+  description: '今天你学习了吗？',
   base: '/yydha/', /* 基础虚拟路径: */
   theme: recoTheme({
     style: '@vuepress-reco/style-default',
     logo: '/logo.png',
     author: 'tanyaohua',
+    authorAvatar: '/touxiang.png',
     docsRepo: 'https://github.com/urmax/yydha',
     docsBranch: 'master',
     docsDir: 'blogs',
@@ -33,7 +34,7 @@ export default defineUserConfig({
     [
       { text: '首页', link: '/' },
       { text: '留言板', link: '/docs/message-board', icon: 'Message2' },
-      { text: '我的在线文档',
+      { text: '在线文档',
         children: [
           { text: 'pug 组件(github)', link: 'https://urmax.github.io/pug-components-api/' },
           { text: 'pug 组件(gitee)', link: 'https://yydha.gitee.io/pug-components-api/' }
@@ -52,7 +53,7 @@ export default defineUserConfig({
         },
         {
           type: 'title',
-          content: '返回旧版',
+          content: '旧版博客',
         },
         {
           type: 'text',
