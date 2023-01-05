@@ -567,9 +567,9 @@ export default {
 ```
 ## 生命周期
 ### vue2
-![图例](https://cdn.jsdelivr.net/gh/urmax/cdn/blog/source/_posts/photo/vue2lifecycle.png)
+![图例](../photo/vue2lifecycle.png)
 ### vue3
-![图例](https://cdn.jsdelivr.net/gh/urmax/cdn/blog/source/_posts/photo/vue3life.jpeg)
+![图例](../photo/vue3life.jpeg)
 vue3中可以继续使用vue2.x中的生命周期钩子，但是有两个被改名：
 beforeDestroy改名为beforeUnmount
 destroyed改名为unmounted

@@ -14,8 +14,8 @@ cover:
 ---
 # 层叠式图片轮播效果demo
 1. 使用原生代码进行层叠轮播效果
-![使用原生代码进行层叠轮播效果](https://cdn.jsdelivr.net/gh/urmax/cdn/blog/source/_posts/photo/使用原生代码进行层叠轮播效果.gif)
+![使用原生代码进行层叠轮播效果](../photo/使用原生代码进行层叠轮播效果.gif)
 [点我查看原生代码进行层叠轮播效果例子](https://yydha.gitee.io/html-demo/html/使用原生代码进行层叠轮播效果.html)
 2. 使用swiper8完成层叠轮播效果
-![使用swiper8完成层叠轮播效果](https://cdn.jsdelivr.net/gh/urmax/cdn/blog/source/_posts/photo/使用swiper8完成层叠轮播效果.gif)
+![使用swiper8完成层叠轮播效果](../photo/使用swiper8完成层叠轮播效果.gif)
 [点我使用swiper8完成层叠轮播效果例子](https://yydha.gitee.io/html-demo/html/使用swiper8完成层叠轮播效果.html)

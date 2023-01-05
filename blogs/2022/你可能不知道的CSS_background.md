@@ -50,7 +50,7 @@ Background，写过 CSS 的朋友们肯定都知道这个属性的作用，顾�
 </body>
 ```
 
-![示例1](https://cdn.jsdelivr.net/gh/urmax/cdn/blog/source/_posts/photo/20210922_background_1.png)
+![示例1](../photo/20210922_background_1.png)
 
 - background-color 背景颜色
     1. 单词：background-color: black;
@@ -72,7 +72,7 @@ Background，写过 CSS 的朋友们肯定都知道这个属性的作用，顾�
 #### 多背景图片 background-image
 在 CSS2.1 中，元素只能添加一张背景图片。然而在 CSS3 中，我们可以给元素添加多张背景图片。其兼容性如下图所示：
 
-![示例1](https://cdn.jsdelivr.net/gh/urmax/cdn/blog/source/_posts/photo/20210922_background_2.jpg)
+![示例1](../photo/20210922_background_2.jpg)
 
 - 多张背景图片可针对每一张设置单独的样式，对应样式用逗号分隔
 ``` html
@@ -91,7 +91,7 @@ Background，写过 CSS 的朋友们肯定都知道这个属性的作用，顾�
 </body>
 ```
 
-![示例2](https://cdn.jsdelivr.net/gh/urmax/cdn/blog/source/_posts/photo/20210922_background_3.jpg)
+![示例2](../photo/20210922_background_3.jpg)
 
 - 那如果图片数量和属性数量不一致呢？
 ``` html
@@ -111,7 +111,7 @@ Background，写过 CSS 的朋友们肯定都知道这个属性的作用，顾�
 
 ```
 
-![示例3](https://cdn.jsdelivr.net/gh/urmax/cdn/blog/source/_posts/photo/20210922_background_4.png)
+![示例3](../photo/20210922_background_4.png)
 
 - 多背景图片总结：
     1. 背景图片所生效的样式，是属性值中与图片位置对应的值；
@@ -119,7 +119,7 @@ Background，写过 CSS 的朋友们肯定都知道这个属性的作用，顾�
     3. 背景图片的层级按着从左往右，依次减小。当然，层级最低的还是 background-color；
 #### 背景渐变 background-image: linear-gradient
 背景渐变是基于 background-image 来设置的。具体语法详见[MDN](https://developer.mozilla.org/es/docs/Web/CSS/CSS_Images/Using_CSS_gradients#gradientes_lineales)。其兼容性如下图所示：
-![示例4](https://cdn.jsdelivr.net/gh/urmax/cdn/blog/source/_posts/photo/20210922_background_5.png)
+![示例4](../photo/20210922_background_5.png)
 
 - background-image: linear-gradient 路径渐变（可手动设置方向，默认自上向下）
 - linear-gradient() 的用法如下用法: 
@@ -140,7 +140,7 @@ Background，写过 CSS 的朋友们肯定都知道这个属性的作用，顾�
         ```
 
         
-![示例5](https://cdn.jsdelivr.net/gh/urmax/cdn/blog/source/_posts/photo/20210922_background_6.png)
+![示例5](../photo/20210922_background_6.png)
 ``` html
         <style>
             .div1 {
@@ -155,7 +155,7 @@ Background，写过 CSS 的朋友们肯定都知道这个属性的作用，顾�
         </body>
 ```
 旋转大法好
-![示例6](https://cdn.jsdelivr.net/gh/urmax/cdn/blog/source/_posts/photo/20210922_background_7.png)
+![示例6](../photo/20210922_background_7.png)
 ``` html
         <style>
             .div1 {
@@ -170,7 +170,7 @@ Background，写过 CSS 的朋友们肯定都知道这个属性的作用，顾�
         </body>
 ```
 转个角度
-![示例7](https://cdn.jsdelivr.net/gh/urmax/cdn/blog/source/_posts/photo/20210922_background_8.png)
+![示例7](../photo/20210922_background_8.png)
 ``` html
         <style>
             .div1 {
@@ -185,7 +185,7 @@ Background，写过 CSS 的朋友们肯定都知道这个属性的作用，顾�
         </body>
 ```
 转个角度
-![示例7](https://cdn.jsdelivr.net/gh/urmax/cdn/blog/source/_posts/photo/20210922_background_9.png)
+![示例7](../photo/20210922_background_9.png)
 - 在颜色那一块还能加一个参数，前一个元素从什么时候开始渐变，后一个元素的颜色从什么时候开始结束渐变
     ``` html
         <style>
@@ -200,7 +200,7 @@ Background，写过 CSS 的朋友们肯定都知道这个属性的作用，顾�
             <div class="div1"></div>
         </body>
     ```
-    ![示例7](https://cdn.jsdelivr.net/gh/urmax/cdn/blog/source/_posts/photo/20210922_background_10.png)
+    ![示例7](../photo/20210922_background_10.png)
 一个有趣的示例，能发现，第一个颜色百分比的权重>倒数第一个>倒数第二个>倒数第三个>...
     ``` html
         <style>
@@ -214,7 +214,7 @@ Background，写过 CSS 的朋友们肯定都知道这个属性的作用，顾�
             <div class="div1"></div>
         </body>
     ```
-    ![示例7](https://cdn.jsdelivr.net/gh/urmax/cdn/blog/source/_posts/photo/20210922_background_11.png)
+    ![示例7](../photo/20210922_background_11.png)
 #### 背景渐变 background-image: radial-gradient 径向渐变
 - radial-gradient 的用法如下用法: 
     1. background-image: radial-gradient(shape size at position, start-color, ..., last-color);
@@ -249,7 +249,7 @@ Background，写过 CSS 的朋友们肯定都知道这个属性的作用，顾�
                 <div class="div1"></div>
             </body>
         ```
-        ![示例8](https://cdn.jsdelivr.net/gh/urmax/cdn/blog/source/_posts/photo/20210922_background_12.png)
+        ![示例8](../photo/20210922_background_12.png)
         ``` html
             <style>
                 .div1 {
@@ -263,7 +263,7 @@ Background，写过 CSS 的朋友们肯定都知道这个属性的作用，顾�
                 <div class="div1"></div>
             </body>
         ```
-        ![示例9](https://cdn.jsdelivr.net/gh/urmax/cdn/blog/source/_posts/photo/20210922_background_13.png)
+        ![示例9](../photo/20210922_background_13.png)
     3. 径向渐变方式主要由`<position>、<shape>、<size>`这三个参数影响，分别控制椭圆的圆心、形状和大小
         - position: 定义渐变的圆心，默认是center center(`<position>`: x轴 y轴,以左上角为原点)
             1. 关键字:X轴：left: 0% center: 50% right: 100%;Y轴: top: 0% center: 50% bottom: 100%；
@@ -333,7 +333,7 @@ Background，写过 CSS 的朋友们肯定都知道这个属性的作用，顾�
                     }
                 </style>
                 ```
-                 ![示例10](https://cdn.jsdelivr.net/gh/urmax/cdn/blog/source/_posts/photo/20210922_background_14.png)
+                 ![示例10](../photo/20210922_background_14.png)
 ####  重复渐变
 - background-image: repeating-linear-gradient 径向渐变
     ``` html
@@ -343,7 +343,7 @@ Background，写过 CSS 的朋友们肯定都知道这个属性的作用，顾�
             }
         </style>
     ```
-    ![示例11](https://cdn.jsdelivr.net/gh/urmax/cdn/blog/source/_posts/photo/20210922_background_15.png)
+    ![示例11](../photo/20210922_background_15.png)
 - background-image: repeating-radial-gradient 只有当首尾两颜色位置不在0%或100%时，重复渐变才生效
     ``` html
         <style>
@@ -352,7 +352,7 @@ Background，写过 CSS 的朋友们肯定都知道这个属性的作用，顾�
             }
         </style>
     ```
-    ![示例11](https://cdn.jsdelivr.net/gh/urmax/cdn/blog/source/_posts/photo/20210922_background_16.png)
+    ![示例11](../photo/20210922_background_16.png)
 ####  背景定位
 - 背景定位 background-position
     1. background-position 默认的定位为 padding-box 盒子的左上角。
@@ -378,15 +378,15 @@ Background，写过 CSS 的朋友们肯定都知道这个属性的作用，顾�
             }
         </style>
     ```
-    ![示例12](https://cdn.jsdelivr.net/gh/urmax/cdn/blog/source/_posts/photo/20210922_background_17.png)
+    ![示例12](../photo/20210922_background_17.png)
 ####  背景重复
 - background-repeat
     1. background-repeat 除了常见的几个 repeat、repeat-x，repeat-y 以及 no-repeat 以外，还在CSS3 中新加了两个值： space 和 round。其兼容性如下图所示：
-    ![示例12](https://cdn.jsdelivr.net/gh/urmax/cdn/blog/source/_posts/photo/20210922_background_18.png)
+    ![示例12](../photo/20210922_background_18.png)
         - background-repeat:space 在保证不缩放的前提下尽可能多的重复图片，并等分图片中间的空隙
-        ![示例13](https://cdn.jsdelivr.net/gh/urmax/cdn/blog/source/_posts/photo/20210922_background_19.png)
+        ![示例13](../photo/20210922_background_19.png)
         - background-repeat:round 在尽可能多的重复图片的前提下，拉伸图片以铺满容器
-        ![示例14](https://cdn.jsdelivr.net/gh/urmax/cdn/blog/source/_posts/photo/20210922_background_20.png)
+        ![示例14](../photo/20210922_background_20.png)
         - 背景图片大于容器时
             1. background-repeat:space 在不缩放的前提下裁剪图片，只保留在容器内的部分
             2. background-repeat:round 缩小图片以铺满容器，长宽与容器尺寸一致（未按比例缩放，图片极有可能变形）
@@ -411,12 +411,12 @@ Background，写过 CSS 的朋友们肯定都知道这个属性的作用，顾�
 }
     </style>
 ```
-![示例15](https://cdn.jsdelivr.net/gh/urmax/cdn/blog/source/_posts/photo/20210922_background_21.png)
+![示例15](../photo/20210922_background_21.png)
 
 #### 背景绘制区域 background-clip
 background-clip 属性规定背景的绘制区域。默认值为 border-box，其属性值同 background-origin 一样，不过表现大不相同。
 这个属性范围要大于background-origin，不然可能就回变成这样。
-![示例15](https://cdn.jsdelivr.net/gh/urmax/cdn/blog/source/_posts/photo/20210922_background_22.png)
+![示例15](../photo/20210922_background_22.png)
 #### 背景大小 background-size
 感觉这个属性很常见吧，其实它也是 CSS3 中新加的属性。 CSS2.1 中，背景图片大小是无法设置的。background-size 除了常见的设置大小和百分比之外，还有两个特殊的属性：contain 和 cover
 - background-size: contain 图片长宽不相同时，把图片按比例缩小至较长的一方完全适应内容区域为止，多用于背景图片比元素大的情况。
