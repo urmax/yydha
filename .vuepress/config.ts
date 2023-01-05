@@ -98,11 +98,11 @@ export default defineUserConfig({
         options: {
             appId: 'OfHiIoLeJpzEmtI6Fqt9PQw6-gzGzoHsz',
             appKey: '0muOlJwko13DTKJPAnwKx0l4',
-            placeholder: '填写邮箱可以收到回复提醒哦！',
-            verify: true, // 验证码服务
+            placeholder: '在此输入',
+            verify: false, // 验证码服务
             // notify: true,
             recordIP: true,
-            hideComments: true, // 隐藏评论
+            hideComments: false, // 隐藏评论
         }
     },
   }),
