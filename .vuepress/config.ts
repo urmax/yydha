@@ -106,5 +106,18 @@ export default defineUserConfig({
         }
     },
   }),
-  // debug: true,
+    head: [
+        ['link', { rel: 'shortcut icon', type: "image/x-icon", href: `/favicon.png` }],
+        [
+            'script', {}, `
+            var _hmt = _hmt || [];
+            (function() {
+              var hm = document.createElement("script");
+              hm.src = "https://hm.baidu.com/hm.js?fb58001ea3cd3202f909c70467d3d036";
+              var s = document.getElementsByTagName("script")[0]; 
+              s.parentNode.insertBefore(hm, s);
+            })();
+            `
+        ]
+    ],
 })
