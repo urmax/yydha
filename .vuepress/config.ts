@@ -6,6 +6,7 @@ export default defineUserConfig({
   title: 'blog for tanyaohua',
   description: '今天你学习了吗？',
   base: '/yydha/', /* 基础虚拟路径: */
+  dest: 'public',
   theme: recoTheme({
     style: '@vuepress-reco/style-default',
     logo: '/logo.png',
@@ -16,7 +17,7 @@ export default defineUserConfig({
     docsDir: 'blogs',
     lastUpdatedText: '最后更新时间',
     autoSetBlogCategories: true,         // 自动设置分类
-    // autoAddCategoryToNavbar: true,  // 自动将首页、分类和标签添加至头部导航条
+    autoAddCategoryToNavbar: true,  // 自动将首页、分类和标签添加至头部导航条
     // series 为原 sidebar
     series: {
     //   '/docs/theme-reco/': [
@@ -32,7 +33,7 @@ export default defineUserConfig({
     },
     navbar:
     [
-      { text: '首页', link: '/' },
+    //   { text: '首页', link: '/' },
       { text: '留言板', link: '/docs/message-board', icon: 'Message2' },
       { text: '在线文档',
         children: [
@@ -44,6 +45,10 @@ export default defineUserConfig({
     bulletin: {
       body: [
         {
+            type: 'title',
+            content: '警告',
+        },
+        {
           type: 'text',
           content: `今天有好好学习吗！`,
           style: 'font-size: 12px;'
@@ -53,28 +58,14 @@ export default defineUserConfig({
         },
         {
           type: 'title',
-          content: '旧版博客',
+          content: '关于',
         },
         {
           type: 'text',
           content: `
           <ul>
+            <li><a href="https://github.com/urmax/yydha/issues">Github<a/></li>
             <li><a href="https://yydha.gitee.io/blog1.0">旧版博客<a/></li>
-          </ul>`,
-          style: 'font-size: 12px;'
-        },
-        {
-          type: 'hr',
-        },
-        {
-          type: 'title',
-          content: 'GitHub',
-        },
-        {
-          type: 'text',
-          content: `
-          <ul>
-            <li><a href="https://github.com/urmax/yydha/issues">Issues<a/></li>
           </ul>`,
           style: 'font-size: 12px;'
         },
@@ -102,12 +93,12 @@ export default defineUserConfig({
             verify: false, // 验证码服务
             // notify: true,
             recordIP: true,
-            hideComments: false, // 隐藏评论
+            // hideComments: false, // 隐藏评论
         }
     },
   }),
     head: [
-        ['link', { rel: 'shortcut icon', type: "image/x-icon", href: `/favicon.png` }],
+        ['link', { rel: 'shortcut icon', type: "image/x-icon", href: "/favicon.png" }],
         [
             'script', {}, `
             var _hmt = _hmt || [];

@@ -121,8 +121,8 @@ module.exports = {
 对应在 `config.js` 要新增一个配置
 ```
 module.exports = {
+    base: '/pug-components-api/', // 必须和仓库名保持一致
     themeConfig: {
-        base: '/pug-components-api/', // 必须和仓库名保持一致
         nav: [...],
         sidebar: [
             {
