@@ -1,7 +1,7 @@
 ---
 title: git删除本地分支 批量删除本地分支
-date: 2023-01-13
-updated: 2023-01-13
+date: 2023-01-17
+updated: 2023-01-17
 tags: 
     - 前端
 categories: 
