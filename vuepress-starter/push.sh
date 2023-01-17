@@ -1,3 +1,3 @@
 git add .
 git commit -m 'feat: add doc'
-git push origin master
+git push -f git@github.com:urmax/yydha.git master:master
