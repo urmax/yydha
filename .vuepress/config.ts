@@ -5,12 +5,13 @@ export default defineUserConfig({
   title: 'blog for tanyaohua',
   description: '今天你学习了吗？',
   dest: 'public',
+  base: '/yydha/', /* 基础虚拟路径: */
   theme: recoTheme({
     style: '@vuepress-reco/style-default',
     logo: '/logo.png',
     author: 'tanyaohua',
     authorAvatar: '/touxiang.png',
-    docsRepo: 'https://github.com/urmax/urmax.github.io',
+    docsRepo: 'https://github.com/urmax/yydha',
     docsBranch: 'master',
     docsDir: 'blogs',
     lastUpdatedText: '最后更新时间',
