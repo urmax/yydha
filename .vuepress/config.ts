@@ -4,14 +4,13 @@ import recoTheme from 'vuepress-theme-reco'
 export default defineUserConfig({
   title: 'blog for tanyaohua',
   description: '今天你学习了吗？',
-  base: '/yydha/', /* 基础虚拟路径: */
   dest: 'public',
   theme: recoTheme({
     style: '@vuepress-reco/style-default',
     logo: '/logo.png',
     author: 'tanyaohua',
     authorAvatar: '/touxiang.png',
-    docsRepo: 'https://github.com/urmax/yydha',
+    docsRepo: 'https://github.com/urmax/urmax.github.io',
     docsBranch: 'master',
     docsDir: 'blogs',
     lastUpdatedText: '最后更新时间',
@@ -41,47 +40,47 @@ export default defineUserConfig({
         ]
       },
     ],
-    // bulletin: {
-    //   body: [
-    //     {
-    //         type: 'title',
-    //         content: '警告',
-    //     },
-    //     {
-    //       type: 'text',
-    //       content: `今天有好好学习吗！`,
-    //       style: 'font-size: 12px;'
-    //     },
-    //     {
-    //       type: 'hr',
-    //     },
-    //     {
-    //       type: 'title',
-    //       content: '关于',
-    //     },
-    //     {
-    //       type: 'text',
-    //       content: `
-    //       <ul>
-    //         <li><a href="https://github.com/urmax/yydha/issues">Github<a/></li>
-    //         <li><a href="https://yydha.gitee.io/blog1.0">旧版博客<a/></li>
-    //       </ul>`,
-    //       style: 'font-size: 12px;'
-    //     },
-    //     {
-    //       type: 'hr',
-    //     },
-    //     {
-    //       type: 'buttongroup',
-    //       children: [
-    //         {
-    //           text: '打赏',
-    //           link: '/docs/others/donate.html'
-    //         }
-    //       ]
-    //     }
-    //   ],
-    // },
+    bulletin: {
+      body: [
+        {
+            type: 'title',
+            content: '警告',
+        },
+        {
+          type: 'text',
+          content: `今天有好好学习吗！`,
+          style: 'font-size: 12px;'
+        },
+        {
+          type: 'hr',
+        },
+        {
+          type: 'title',
+          content: '关于',
+        },
+        {
+          type: 'text',
+          content: `
+          <ul>
+            <li><a href="https://github.com/urmax/yydha/issues">Github<a/></li>
+            <li><a href="https://yydha.gitee.io/blog1.0">旧版博客<a/></li>
+          </ul>`,
+          style: 'font-size: 12px;'
+        },
+        {
+          type: 'hr',
+        },
+        {
+          type: 'buttongroup',
+          children: [
+            {
+              text: '打赏',
+              link: '/docs/others/donate.html'
+            }
+          ]
+        }
+      ],
+    },
     // valineConfig 配置与 1.x 一致
     commentConfig: {
         type: 'valine',
@@ -95,5 +94,19 @@ export default defineUserConfig({
             // hideComments: false, // 隐藏评论
         }
     },
-  })
+  }),
+    head: [
+        ['link', { rel: 'shortcut icon', type: "image/x-icon", href: "/favicon.png" }],
+        [
+            'script', {}, `
+            var _hmt = _hmt || [];
+            (function() {
+              var hm = document.createElement("script");
+              hm.src = "https://hm.baidu.com/hm.js?fb58001ea3cd3202f909c70467d3d036";
+              var s = document.getElementsByTagName("script")[0]; 
+              s.parentNode.insertBefore(hm, s);
+            })();
+            `
+        ]
+    ],
 })
