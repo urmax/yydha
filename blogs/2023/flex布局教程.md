@@ -63,7 +63,7 @@ flex-flow属性是flex-direction属性和flex-wrap属性的简写形式，默认
 ### justify-content 主轴对齐方式
 ```css
 .box {
-  justify-content: flex-start | flex-end | center | space-between | space-around;
+  justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly | initial | inherit;
 }
 ```
 flex-start（默认值）：左对齐
@@ -71,6 +71,9 @@ flex-end：右对齐
 center： 居中
 space-between：两端对齐，项目之间的间隔都相等。
 space-around：每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍。
+space-evenly: 每个项目两侧的间隔相等。
+initial：根据默认值放置。
+inherit：继承父项目放置。
 ### align-items 交叉轴对齐方式
 ```css
 .box {
