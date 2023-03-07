@@ -1,0 +1,1 @@
+import{_ as e}from"./framework-c27b6911.js";import{o as t,c as o,a as n}from"./app-a02037cf.js";const s={},c=n("p",null,"This is plugin.",-1),_=[c];function l(r,i){return t(),o("div",null,_)}const u=e(s,[["render",l],["__file","plugin.html.vue"]]);export{u as default};

@@ -1,0 +1,1 @@
+import{_ as e}from"./framework-c27b6911.js";import{o as t,c as o,a as s}from"./app-a02037cf.js";const c={},_=s("p",null,"This is api.",-1),a=[_];function n(r,i){return t(),o("div",null,a)}const f=e(c,[["render",n],["__file","api.html.vue"]]);export{f as default};
