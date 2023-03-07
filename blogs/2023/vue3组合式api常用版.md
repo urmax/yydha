@@ -1,7 +1,7 @@
 ---
 title: vue3组合式api常用版
 date: 2023-03-03
-updated: 2023-03-03
+updated: 2023-03-07
 tags: 
     - 前端
 categories: 
@@ -54,4 +54,25 @@ const confirm = () => {
     emits('success');
     emits('update:show', false);
 }
+```
+### 3. 计算属性的使用方式
+```js
+const types = computed(() => {
+    return typeList.value.filter(item => item.label);
+});
+```
+### 4. 监听得使用方式
+```js
+// 与watch相似都可以监听一个数据源。
+// 但是watchEffect会在初始化的时候调用一次，与watch的immediate类似。
+watchEffect(() => {
+     console.log(`当${age}的值变化的时候调用，初始化的时候也调用一次`)
+});
+
+watch(() => props.curRole, () => {
+    console.log(props.curRole);
+},{
+    immediate: true,
+    deep: true,
+});
 ```
