@@ -1,7 +1,7 @@
 ---
 title: vue3组合式api常用版
 date: 2023-03-03
-updated: 2023-03-07
+updated: 2023-03-14
 tags: 
     - 前端
 categories: 
@@ -75,4 +75,62 @@ watch(() => props.curRole, () => {
     immediate: true,
     deep: true,
 });
+```
+### 5. 路由跳转
+```js
+// 本窗口
+const router = useRouter();
+const toDetail = () => {
+    router.push({ name: 'yemian',
+        query: {
+            name: 'zhangsan',
+            id: 1,
+        },});
+};
+
+// 新窗口
+const router = useRouter();
+const toDetail = () => {
+    const route = router.resolve({
+        name: 'yemian',
+        query: {
+            name: 'zhangsan',
+            id: 1,
+        },
+    });
+    window.open(route.href, '_blank');
+};
+
+```
+
+### 5. 使用axios发请求
+```js
+loginOut() {
+    this.axios.get('/loginout/', {
+        params: {
+            userid: '1',
+        }
+    }).then(data => {
+        if (data.code === 200) {
+            // ...
+        }
+    });
+},
+
+// 新窗口
+getData() {
+    this.$axios.post('/getData',
+        {
+            id: '1',
+        },
+        {
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        }).then((response) => {
+        if (response.data) {
+            // ...
+        }
+    });
+},
 ```
