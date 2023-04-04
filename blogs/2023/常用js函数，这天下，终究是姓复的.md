@@ -1,7 +1,7 @@
 ---
 title: 常用js函数，这天下，终究是姓复的
 date: 2023-03-07
-updated: 2023-03-07
+updated: 2023-04-04
 tags: 
     - 前端
 categories: 
@@ -38,4 +38,27 @@ export const thousands = (num: number | string) => {
     const str = num.toString();
     return str.replace(/\B(?=(\d{3})+\b)/g, ',');
 };
+
+// 使用方式
+import { thousands } from '@/utils/number';
+
+// 直接使用表达式就好
+```
+
+### 3. 在数组对象中循环他的子项之和
+```js
+const count = computed(() => {
+    return List.value.reduce((sum, e) => sum + Number(e.count || 0), 0);
+});
+```
+
+### 4. 图片是流文件返回，显示在页面上
+```js
+axios.get('/1/2/3', {
+    responseType: 'blob',
+}).then((res: Record<string, any>) => {
+    const blob = new Blob([res.data]);
+    const url = window.URL.createObjectURL(blob);
+    captchaUrl.value = url;
+});
 ```
