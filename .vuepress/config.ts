@@ -40,6 +40,7 @@ export default defineUserConfig({
           { text: 'pug 组件(gitee)', link: 'https://yydha.gitee.io/pug-components-api/' }
         ]
       },
+      { text: '一些有意思的效果', link: '/docs/html/amazing', icon: 'Message2' },
     ],
     bulletin: {
       body: [
