@@ -5,7 +5,7 @@ updated: 2023-04-04
 tags: 
     - 前端
 categories: 
-    - js
+    - 常用js方法集合
 keywords: js
 description: 常用js函数，这天下，终究是姓复的
 ---
