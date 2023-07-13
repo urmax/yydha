@@ -19,34 +19,36 @@ export default defineUserConfig({
     autoAddCategoryToNavbar: true,  // 自动将首页、分类和标签添加至头部导航条
     // series 为原 sidebar
     series: {
-    //   '/docs/theme-reco/': [
-    //     {
-    //       text: 'module one',
-    //       children: ['home', 'theme']
-    //     },
-    //     {
-    //       text: 'module two',
-    //       children: ['api', 'plugin']
-    //     }
-    //   ]
+      //   '/docs/theme-reco/': [
+      //     {
+      //       text: 'module one',
+      //       children: ['home', 'theme']
+      //     },
+      //     {
+      //       text: 'module two',
+      //       children: ['api', 'plugin']
+      //     }
+      //   ]
     },
     navbar:
-    [
-    //   { text: '首页', link: '/' },
-      { text: '留言板', link: '/docs/message-board', icon: 'Message2' },
-      { text: '在线文档',
-        children: [
-          { text: 'pug 组件(github)', link: 'https://urmax.github.io/pug-components-api/' },
-          { text: 'pug 组件(gitee)', link: 'https://yydha.gitee.io/pug-components-api/' }
-        ]
-      },
-      { text: '一些有意思的效果', link: '/docs/html/amazing', icon: 'Message2' },
-    ],
+      [
+        //   { text: '首页', link: '/' },
+        { text: '留言板', link: '/docs/message-board', icon: 'Message2' },
+        {
+          text: '在线文档',
+          children: [
+            { text: 'pug 组件(github)', link: 'https://urmax.github.io/pug-components-api/' },
+            { text: 'pug 组件(gitee)', link: 'https://yydha.gitee.io/pug-components-api/' }
+          ]
+        },
+        { text: '一些有意思的效果', link: '/docs/html/amazing', icon: 'Message2' },
+        { text: 'leetcode', link: '/blogs/leetcode/leetcode', icon: 'Message2' },
+      ],
     bulletin: {
       body: [
         {
-            type: 'title',
-            content: '警告',
+          type: 'title',
+          content: '警告',
         },
         {
           type: 'text',
@@ -85,22 +87,22 @@ export default defineUserConfig({
     },
     // valineConfig 配置与 1.x 一致
     commentConfig: {
-        type: 'valine',
-        options: {
-            appId: 'OfHiIoLeJpzEmtI6Fqt9PQw6-gzGzoHsz',
-            appKey: '0muOlJwko13DTKJPAnwKx0l4',
-            placeholder: '在此输入',
-            verify: false, // 验证码服务
-            // notify: true,
-            recordIP: true,
-            // hideComments: false, // 隐藏评论
-        }
+      type: 'valine',
+      options: {
+        appId: 'OfHiIoLeJpzEmtI6Fqt9PQw6-gzGzoHsz',
+        appKey: '0muOlJwko13DTKJPAnwKx0l4',
+        placeholder: '在此输入',
+        verify: false, // 验证码服务
+        // notify: true,
+        recordIP: true,
+        // hideComments: false, // 隐藏评论
+      }
     },
   }),
-    head: [
-        ['link', { rel: 'shortcut icon', type: "image/x-icon", href: "/favicon.png" }],
-        [
-            'script', {}, `
+  head: [
+    ['link', { rel: 'shortcut icon', type: "image/x-icon", href: "/favicon.png" }],
+    [
+      'script', {}, `
             var _hmt = _hmt || [];
             (function() {
               var hm = document.createElement("script");
@@ -109,6 +111,6 @@ export default defineUserConfig({
               s.parentNode.insertBefore(hm, s);
             })();
             `
-        ]
-    ],
+    ]
+  ],
 })

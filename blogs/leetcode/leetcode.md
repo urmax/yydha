@@ -15,6 +15,8 @@ description: leetcode汇总
 
 [876.链表的中间结点](/docs/leetcode/876.链表的中间结点.html)
 
+[931.下降路径最小和](<(/docs/leetcode/931.下降路径最小和.html)>)
+
 [1342.将数字变成 0 的操作次数](/docs/leetcode/1342.将数字变成0的操作次数.html)
 
 [1480.一堆数组的动态和](/docs/leetcode/1480.一堆数组的动态和.html)
