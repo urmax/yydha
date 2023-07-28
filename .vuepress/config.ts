@@ -78,7 +78,7 @@ export default defineUserConfig({
           type: 'buttongroup',
           children: [
             {
-              text: '打赏',
+              text: '关于我',
               link: '/docs/others/donate.html'
             }
           ]
