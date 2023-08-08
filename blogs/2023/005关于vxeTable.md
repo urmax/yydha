@@ -1,5 +1,5 @@
 ---
-title: 005关于vxeTable
+title: 关于vxeTable
 date: 2023-07-28
 updated: 2023-07-28
 tags: 
@@ -7,12 +7,12 @@ tags:
 categories: 
     - 插件
 keywords: js
-description: 005关于vxeTable
+description: 关于vxeTable
 ---
 # 005关于vxeTable
 一款优秀的表格解决方案，可以实现表格的各种处理，包括树形的复杂结构。
 官网： https://vxetable.cn/
-### 1. 关于使用了其导出excel的方法，想更改表格线颜色。
+### 1. 
 ```js
 data() {
   return {
