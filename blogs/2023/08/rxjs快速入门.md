@@ -1,7 +1,7 @@
 ---
 title: rxjs快速入门
 date: 2023-08-11
-updated: 2023-08-11
+updated: 2023-08-14
 tags:
   - rxjs
 categories:
@@ -205,6 +205,7 @@ range(5).subscribe({
     console.log(value);
   }
 });
+// 发出的数据流
 // 0
 // 1
 // 2
@@ -214,6 +215,50 @@ range(5).subscribe({
 
 方法内部不是一次发出 length 个数值，而是发送了 length 次，每次发送一个数值，都调用了一次内部的 next 方法。
 
+#### 3.1.2 from
+
+将 Array, promise, Iterator 转换为 Observable 对象。
+
+```ts
+import { from } from 'rxjs';
+from([1, 2, 3]).subscribe(value => {
+  console.log(value);
+});
+
+function p() {
+  return new Promise(resolve => {
+    resolve([1, 2, 3]);
+  });
+}
+
+from(p()).subscribe(value => {
+  console.log(value);
+});
+```
+
+#### 3.1.3 from
+
 ### 3.2 操作符
 
-#### 3.2.1 map、mapTo
+https://cn.rx.js.org/manual/overview.html#h16
+
+#### 3.2.1 map
+
+map: 对数据流进行转换，基于原有值进行转换。
+
+```js
+import { range } from 'rxjs';
+import { map } from 'rxjs/operators';
+const example = range(1, 5).pipe(map(val => val * 2));
+example.subscribe(val => console.log(val));
+// 发出的数据流
+// 2
+// 4
+// 6
+// 8
+// 10
+```
+
+#### 3.2.2 mapTo
+
+mapTo: 对数据流进行转换，不关心原有值，直接传入转换后的值。
