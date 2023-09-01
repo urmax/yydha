@@ -15,7 +15,7 @@ bannerBrand:
   bgImage: '/bg.svg'
   # heroText: tanyaohua-blog
   title: Tanyaohua's Personal Homepage
-  description: 👋 Hi there, I'm Tanyaohua! I am a front-end developer.
+  description: 👋 Hi there, I'm Tanyaohua👻! I am a front-end developer😜.好记性不如烂笔头嘛，于是便整理了一些小东西😋!
   socialLinks:
     - { icon: 'LogoGithub', link: 'https://github.com/urmax' }
 blog:
