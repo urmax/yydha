@@ -10,7 +10,7 @@ keywords: js
 description: angular中的ngZone解决了echarts点击后，视图不更新的问题。
 ---
 
-# vue3 中的父子组件传递 slot 的方式
+# angular中的ngZone解决了echarts点击后，视图不更新的问题
 
 ### 缘起
 
