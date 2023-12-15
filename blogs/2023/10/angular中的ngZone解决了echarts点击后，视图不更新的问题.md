@@ -45,7 +45,7 @@ import {NgxEchartsModule} from "ngx-echarts";
 ```html
 <div #myecharts echarts [options]="chartOption" class="demo-chart" (chartInit)="onChartInit($event)"></div>
 ```
-
+nvm
 这样我才 ts 中写入了弹窗和点击的逻辑。
 
 ```ts
