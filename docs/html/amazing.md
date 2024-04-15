@@ -11,6 +11,12 @@ hideComments: false
 
 #### 2023-05-29
 
+5. [大乐透模拟](https://yydha.gitee.io/html-demo/html/2023-10/大乐透模拟.html)
+
+6. [双色球模拟](https://yydha.gitee.io/html-demo/html/2023-10/双色球模拟.html)
+
+#### 2023-05-29
+
 3. [粒子时钟](https://yydha.gitee.io/html-demo/html/2023-05/粒子时钟.html)
 
 #### 2023-01-22
