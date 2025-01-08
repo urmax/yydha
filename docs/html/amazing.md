@@ -9,6 +9,10 @@ hideComments: false
 一些有意思的效果
 :::
 
+#### 2025-01-02
+
+6. [四角线框的跟随移动](https://urmax.github.io/htmlDemo/html/2024-12/四角线框的跟随移动.html)
+
 #### 2023-05-29
 
 5. [大乐透模拟](https://urmax.github.io/htmlDemo/html/2023-10/大乐透模拟.html)
