@@ -43,6 +43,7 @@ export default defineUserConfig({
                 },
                 { text: '一些有意思的效果', link: '/docs/html/amazing', icon: 'Message2' },
                 { text: 'leetcode', link: '/blogs/leetcode/leetcode', icon: 'Message2' },
+                { text: '免费领取大流量卡', link: 'https://172.lot-ml.com/ProductEn/Index/18fd56f12e4ca463', icon: 'Message2' },
             ],
         bulletin: {
             body: [
